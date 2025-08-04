@@ -36,4 +36,13 @@ public class Main {
     //i want to create class B extends class A,Thread
     //as java doesn't have multiple inheritance, so can only implement interfaces, so here i use Runnable
     //ex: class B extends class A implements Runnable{}
+
+    /*
+    - Topics covered
+    - basic creation of thread (java.lang)
+    - thread lifecycle
+    - Thread methods like yield,priority,name,daemon,interrupt
+    - synchronized for shared resources
+    - Locks - intrinsic (not in our control), extrinsic (manual) -> (java.util.concurrent.locks)
+     */
 }
