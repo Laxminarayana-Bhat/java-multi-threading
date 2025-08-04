@@ -30,4 +30,10 @@ public class Main {
                 System.out.println(Thread.currentThread().getName());
         }
     }
+
+    //when you use Runnable and Thread
+    //lets say I have class A,B
+    //i want to create class B extends class A,Thread
+    //as java doesn't have multiple inheritance, so can only implement interfaces, so here i use Runnable
+    //ex: class B extends class A implements Runnable{}
 }
