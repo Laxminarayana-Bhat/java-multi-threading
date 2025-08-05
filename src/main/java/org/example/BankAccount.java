@@ -39,7 +39,9 @@ public class BankAccount {
             }
 
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            System.out.println("Interrupt" + e);
+            Thread.currentThread().interrupt();
+//            throw new RuntimeException(e); we can throw an exception or call interrupt method
         }
 
     }
