@@ -9,7 +9,7 @@ public class DeadlyLock {
     //| No Preemption    | Resources cannot be forcibly taken from a thread          |
     //| Circular Wait    | Threads form a cycle of waiting on each other’s resources |
 
-    //to create let 1 thread catch lock and waits , then another cathes the 2 and waits, after waiting 1 try to catch 2 but will wait.....
+    //to create let 1 thread catch lock and waits , then another catches the 2 and waits, after waiting 1 try to catch 2 but will wait.....
 
     private final Object lock1 = new Object();
     private final Object lock2 = new Object();
