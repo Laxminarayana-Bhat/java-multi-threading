@@ -40,3 +40,10 @@ public class CompletableFutureTest {
 //| `.get()` or `.join()` on the result       | ✅ Yes     |
 //| Inside Spring controller without `.get()` | ❌ No      |
 //| Using `.thenApply()`, `.thenAccept()` etc | ❌ No      |
+
+//| Feature               | `runAsync()`                            | `supplyAsync()`                               |
+//| --------------------- | --------------------------------------- | --------------------------------------------- |
+//| **Return value**      | `CompletableFuture<Void>`               | `CompletableFuture<T>`                        |
+//| **Returns a result?** | ❌ No                                    | ✅ Yes (it returns a value)                    |
+//| **Use case**          | Run a task that doesn't return anything | Run a task and get a result when it completes |
+//| **Lambda type**       | `Runnable`                              | `Supplier<T>`                                 |
