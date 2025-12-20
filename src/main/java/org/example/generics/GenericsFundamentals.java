@@ -74,6 +74,10 @@ public class GenericsFundamentals {
         return total;
     }
 
+    //T → “I am creating a box. I decide the type later.”
+    //
+    //? → “Someone gave me a box. I don’t know what’s inside, but I can safely read or write depending on the rules.”
+
     //Type erasure removes generic type information at runtime to maintain backward compatibility. Generic types exist only at compile time.
     //🟢 T vs ? — CORE DIFFERENCE
     //Feature	T (Type Parameter)	? (Wildcard)
