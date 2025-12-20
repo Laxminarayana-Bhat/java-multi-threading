@@ -23,9 +23,9 @@ public class ThreadLifeCycle extends Thread {
         System.out.println(thread.getState());//NEW
         thread.start();
         System.out.println(thread.getState());//RUNNABLE
+        //practically nothing as RUNNING state in java, jvm initiates when cpu is available for task execution
         Thread.sleep(100);//main thread will sleep
         System.out.println(thread.getState());//TIMED WAITING
-        //practically nothing as RUNNING state in java, jvm initiates when cpu is available for task execution
         thread.join();
         System.out.println(thread.getState());//TERMINATED
 

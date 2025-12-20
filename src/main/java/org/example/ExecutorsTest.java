@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.concurrent.*;
 
 public class ExecutorsTest {
-    private static final ExecutorService executorService = Executors.newFixedThreadPool(9);//max size of 10
+    private static final ExecutorService executorService = Executors.newFixedThreadPool(9);//max size of n
     private static final ExecutorService single = Executors.newSingleThreadExecutor();//single thread
     Executor executor = Executors.newSingleThreadExecutor();
 
