@@ -1,5 +1,10 @@
 package org.example;
 
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
 public class ThreadLifeCycle extends Thread {
     public ThreadLifeCycle(String name) {
         super(name);
@@ -87,4 +92,18 @@ public class ThreadLifeCycle extends Thread {
             }
         }
     }
+    //ways to create a thread:
+    //1. Extending the Thread Class
+    //2. Implementing the Runnable Interface
+    //3. Using Lambda Expressions (Java 8+)
+    //4. Using the ExecutorService and Thread Pools
+    //5. Using Callable and Future (with ExecutorService)
+
+    //“Runnable is preferred because it supports multiple inheritance and separates task from thread.”
+    //What happens if we call run() instead of start()?
+    //        thread.run();
+    //✅ No new thread is created
+
+
+
 }

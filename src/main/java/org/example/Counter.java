@@ -2,7 +2,7 @@ package org.example;
 
 public class Counter {
 
-    private int count = 0;
+    private volatile int count = 0;
 
     public int getCount() {
         return count;
@@ -11,7 +11,7 @@ public class Counter {
     //synchronized method
     //critical section can be called by only 1 thread at a time - mutual exclusion
     //intrinsic lock - automatic locking by system
-    public synchronized void increment() {
+    public void increment() {
         count++;
     }
 
