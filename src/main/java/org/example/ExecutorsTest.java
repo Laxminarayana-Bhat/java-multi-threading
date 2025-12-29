@@ -18,7 +18,6 @@ public class ExecutorsTest {
             });//submit is used to create runnable methods
         }
 
-
         System.out.println("---------------------");
 
 

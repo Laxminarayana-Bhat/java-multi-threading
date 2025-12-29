@@ -1,4 +1,4 @@
-package org.example;
+package org.example.phase2;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
